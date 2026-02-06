@@ -1,19 +1,72 @@
 /*
 color list:
 almond cream - #F1DAC4
-lilac ash - #A69CAC
-dusty grape - #474973
-prussian blue - #161B33
-ink black - #0D0C1D
+shadow grey - #32292F
+burnt tangerine - #D64933
+verdigris - #17A398
+sage green - #70AE6E
 
 */
+
 body {
 	background: #F1DAC4;
 	color: #0D0C1D;
-}
-
-.title {
-	padding: 10px;
 	text-align: center;
 }
 
+.upgradeBtn {
+	padding: 20px;
+	margin: 10px;
+}
+
+.clicker {
+	max-width: 500px;
+
+}
+
+.clicker:active {
+	transform: scale(0.95);
+}
+
+.upgradeMenu {
+	background: #17A398;
+  	position: absolute;
+  	left: 50%;
+ 	top: 50%;
+  	width: 500px;
+  	height: 500px;
+  	margin-left: -250px;
+  	/* -1/2 width */
+  	margin-top: -100px;
+  	/* -1/2 height */
+}
+
+
+.upgradeBtn {
+  position: relative;
+  display: inline-block;
+  cursor: default;
+}
+
+.upgradeBtn .tooltiptext {
+  visibility: hidden;
+  padding: 0.25em 0.5em;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  border-radius: 0.25em;
+  white-space: nowrap;
+  
+  /* Position the tooltip */
+  position: absolute;
+  z-index: 1;
+  bottom: 100%;
+  left: 100%;
+  transition-property: visibility;
+  transition-delay: 0s;
+}
+
+.upgradeBtn:hover .tooltiptext {
+  visibility: visible;
+  transition-delay: 0.3s;
+}

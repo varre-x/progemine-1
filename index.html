@@ -2,13 +2,23 @@
 <html lang="en">
 <head>
 	<link rel="stylesheet" href="style.css">
-	<title>Shaco</title>
+	<title>Cookie Clicker</title>
 </head>
 <body>
-	<div class="title">
-		<h1>Shaco</h1>
-		<img src="https://ddragon.leagueoflegends.com/cdn/img/champion/splash/Shaco_2.jpg">
+	<h1 id="money-counter">0</h1>
+
+	<img class="clicker" id="clicker" src="cookie.png" width="70%">
+	<br>
+
+	<div class="upgradeMenu">
+		<h1>Upgrades!</h1>
+		<button class="upgradeBtn" id="upgrade1">Cost: 20<span class="tooltiptext">+1 Click Power</span></button>
+		<button class="upgradeBtn" id="upgrade2">Cost: 50<span class="tooltiptext">+5 Click Power</span></button>
+		<br>
+		<button class="upgradeBtn" id="upgrade3">Cost: 20<span class="tooltiptext">+1 Passive Power</span></button>
+		<button class="upgradeBtn" id="upgrade4">Cost: 50<span class="tooltiptext">+5 Passive Power</span></button>
 	</div>
+
 	<script src="script.js"></script>
 </body>
 </html>
